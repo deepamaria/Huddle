@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url("https://fonts.google.com/specimen/Poppins");
+
+body{
+
+    /* variables */
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+
+    /* ----- */
+    
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Violet);
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5px;
+}
+.bgImg svg {
+    /* background-repeat: no-repeat; */
+    background: cover;
+}
+.navPart {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.logo svg {
+    height: 100%;
+    width: 30%;
+}
+
+.mainPart {
+    height: 80%;
+    width: 100%;
+}
+
+footer {
+    height: 10%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    /* margin-left: 10% ; */
+    }
+
+ion-icon{
+    font-size: 32px;
+}
