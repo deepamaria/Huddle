@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 @import url("https://fonts.google.com/specimen/Poppins");
 
@@ -17,7 +18,6 @@ body{
     width: 100vw;
     background-color: var(--Violet);
 
-    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -35,6 +35,8 @@ body{
     /* background-repeat: no-repeat; */
     background-size: contain;
 }
+
+/* navbar */
 .navPart {
     height: 10%;
     width: 100%;
@@ -46,6 +48,7 @@ body{
     width: 30%;
 }
 
+/* mainPart with 2 sections */
 .mainPart {
     height: 80%;
     width: 100%;
@@ -81,17 +84,84 @@ body{
     padding: 10px;
     border-radius: 20px;
 }
+
+/* footer */
 footer {
     height: 10%;
     width: 100%;
     
     display: flex;
     justify-content: center;
-    /* margin-left: 10% ; */
-    }
+    align-items: center;
+    letter-spacing: 10px;
+
+}
 
 ion-icon{
     font-size: 24px;
     color: white;
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .navPart {
+        justify-content: left;
+        align-items: center;
+        padding: 50px;
+    }
+    .logo svg {
+        height: 80%;
+        width: 80%;
+    }
+
+    .mainPart {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: left;
+        /* gap: 50px; */
+        padding: 10px;
+    }
+    .section1{
+        height: 100%;
+        width: 40%;
+        
+    }
+    .section1 svg {
+        height: 100%;
+        width: 100%;
+        
+    }
+    
+    .section2 {
+        height: 100%;
+        width: 40%;
+        justify-content: center;
+        align-items: left;
+        text-align: left;
+        /* padding: 5%; */
+        gap: 40px;
+    }
+    
+    .secHead {
+        font-size: 32px;
+        text-align: left;
+    }
+    
+    .btn {
+        width: 50%;
+        padding: 10px;
+        border-radius: 20px;
+        
+    }
+
+    footer{
+        justify-content: right;
+        padding: 80px;
+    }
+    ion-icon {
+        font-size: 32px;
+    }
+
+}
